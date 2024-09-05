@@ -297,9 +297,7 @@ public extension iPhoneNumberField {
     func onEditingBegan(perform action: ((UIViewType) -> ())? = nil) -> Self {
         var view = self
         if let action = action {
-            DispatchQueue.main.async {
-                view.onBeginEditingHandler = action
-            }
+            view.onBeginEditingHandler = action
         }
         return view
     }
@@ -310,9 +308,7 @@ public extension iPhoneNumberField {
     func onNumberChange(perform action: ((PhoneNumber?) -> ())? = nil) -> Self {
         var view = self
         if let action = action {
-            DispatchQueue.main.async {
-                view.onPhoneNumberChangeHandler = action
-            }
+            view.onPhoneNumberChangeHandler = action
         }
         return view
     }
@@ -323,9 +319,7 @@ public extension iPhoneNumberField {
     func onEdit(perform action: ((UIViewType) -> ())? = nil) -> Self {
         var view = self
         if let action = action {
-            DispatchQueue.main.async {
-                view.onEditingChangeHandler = action
-            }
+            view.onEditingChangeHandler = action
         }
         return view
     }
@@ -336,9 +330,7 @@ public extension iPhoneNumberField {
     func onEditingEnded(perform action: ((UIViewType) -> ())? = nil) -> Self {
         var view = self
         if let action = action {
-            DispatchQueue.main.async {
-                view.onEndEditingHandler = action
-            }
+            view.onEndEditingHandler = action
         }
         return view
     }
